@@ -34,7 +34,7 @@ external_components:
 sensor:
   - platform: custom
     lambda: |-
-      auto my_sensor = new RFSensor();
+      auto my_sensor = new AcuriteSensor();
       App.register_component(my_sensor);
       return {my_sensor->temperature_sensor, my_sensor->humidity_sensor};
     sensors:
